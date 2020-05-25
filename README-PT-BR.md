@@ -42,11 +42,11 @@ Um conjunto de scripts Unity em C# que podem ser úteis em diversos projetos dif
 
 ## Conteúdo
 
-Existem três tipos de classes neste repositório: classes que herdam de MonoBehaviou, classes que não herdam de MonoBehaviour (e são estáticas) e classes com métodos de extensão. As classes do segundo e terceiro tipo podem ser usadas normalmente, isto é, podem ser usadas da forma normal em que classes estáticas e classes com métodos de extensão são usadas. Entretanto, o primeiro tipo de classes (classes que herdam de MonoBehaviour) precisam ser anexadas como component de um GameObject, para, assim, os seus métodos poderem ser utilizados.
+Existem três tipos de classes neste repositório: classes que herdam de MonoBehaviour, classes que não herdam de MonoBehaviour (e são estáticas) e classes com métodos de extensão. As classes do segundo e terceiro tipo podem ser usadas normalmente, isto é, podem ser usadas da forma normal em que classes estáticas e classes com métodos de extensão são usadas. Entretanto, o primeiro tipo de classes (classes que herdam de MonoBehaviour) precisam ser anexadas como component de um GameObject para, assim, os seus métodos poderem ser utilizados.
 
 ### Camera Helpers
 
-- **Screenshot.cs**: Classe com métodos para tirar screenshots a partir da visão da câmera no jogo.
+- **Screenshot.cs**: Classe com métodos para capturar screenshots a partir da visão da câmera no jogo.
 
 ### Canvas Helpers
 
@@ -56,9 +56,9 @@ Existem três tipos de classes neste repositório: classes que herdam de MonoBeh
 
 - **CanvasItemsPaginationManager.cs**: Classe que cria paginação em um conjunto de items de canvas. Exemplos de conjuntos de items de canvas: galeria de imagens, tabela de ranking de pontuação.
 
-- **CursorEffects.cs**: Classe com métodos que mudam o cursor do mouse do ícone de seta para o ícone de link, e vice-versa. Para usar essa classe e mudar o cursor do mouse ao passá-lo em um elemento do canvas (como um botão, por exemplo), você precisa de anexar esse script à um GameObject e atribuir a textura de seta e a textura de link aos dois campos públicos. Os métodos ChangeCursorToArrow() e ChangeCursorToLink() podem ser chamados com um EventTrigger, utilizando os event listeners OnPointerEnter e OnPointerExit.
+- **CursorEffects.cs**: Classe com métodos que mudam o cursor do mouse do ícone de seta para o ícone de link, e vice-versa. Para usar essa classe e mudar o cursor do mouse ao passar em cima de um elemento do canvas (como um botão, por exemplo), você precisa anexar esse script à um GameObject e atribuir a textura de seta e a textura de link aos dois campos públicos. Os métodos ChangeCursorToArrow() e ChangeCursorToLink() podem ser chamados com um EventTrigger, utilizando os event listeners OnPointerEnter e OnPointerExit.
 
-- **InputFieldHelpers.cs**: Class com métodos para utilizar no component de InputField ou TMP_InputField. Com essa classe você pode mostrar or ocultar o conteúdo de um campo de senha, por exemplo.
+- **InputFieldHelpers.cs**: Classe com métodos para utilizar no component de InputField ou TMP_InputField. Com essa classe você pode mostrar or ocultar o conteúdo de um campo de senha, por exemplo.
 
 - **ScrollbarButtons.cs**: Classe com métodos que permitem o uso de botões para controlar uma scrollbar.
 
@@ -108,11 +108,11 @@ Existem três tipos de classes neste repositório: classes que herdam de MonoBeh
 
 ### Texture Helpers:
 
-- **TextureEditor.cs**: Classe com métodos para edição de textures, como recortes, por exemplo.
+- **TextureEditor.cs**: Classe com métodos para edição de Textures, como recortes, por exemplo.
 
-- **TextureLoader.cs**: Classe com métodos que permitem a obtenção de uma texture a partir de um arquivo ou URL.
+- **TextureLoader.cs**: Classe com métodos que permitem a obtenção de uma Texture a partir de um arquivo ou URL.
 
-- **TextureScale.cs**: Classe com métodos que permitem o redimensionamento de uma textura. Na maioria dos caso, apenas a utilização do método `public static void Bilinear(Texture2D tex, int newWidth, int newHeight)` é suficiente. [Esse script foi obtido na Unity Community Wiki](https://wiki.unity3d.com/index.php/TextureScale).
+- **TextureScale.cs**: Classe com métodos que permitem o redimensionamento de uma Texture. Na maioria dos caso, apenas a utilização do método `public static void Bilinear(Texture2D tex, int newWidth, int newHeight)` é suficiente. [Esse script foi obtido na Unity Community Wiki](https://wiki.unity3d.com/index.php/TextureScale).
 
 ### Virtual Keyboard Helpers:
 
