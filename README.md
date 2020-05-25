@@ -14,14 +14,35 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
 
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [Description](#description)
+- [Content](#content)
+  - [Camera Helpers](#camera-helpers)
+  - [Canvas Helpers](#canvas-helpers)
+  - [Email Helpers](#email-helpers)
+  - [Extensions](#extensions)
+  - [File Helpers](file-helpers)
+  - [GameObject Helpers](gameobject-helpers)
+  - [Hashing Helpers](hashing-helpers)
+  - [Http Helpers](http-helpers)
+  - [Scene Helpers](scene-helpers)
+  - [String Helpers](string-helpers)
+  - [Texture Helpers](texture-helpers)
+  - [Virtual Keyboard Helpers](virtual-keyboard-helpers)
+  - [XML Helpers](xml-helpers)
+- [How to Use](#how-to-use)
+- [How to Contribute](#how-to-contribute)
+- [License](#license)
+
 ## Description
 
 A set of Unity C# scripts useful for several different projects.
 
 ## Content
 
-**TODO**
-The class create these delays using StartCoroutine() and IEnumerators, needing the inheritance from MonoBehaviour.
+There are three types of classes in this repository: classes that inherits from MonoBehaviour, classes that do not inherits from MonoBehaviour (and are static) and classes with extension methods. The classes of the second and third type can be used normally, that is, they can be used in the normal way that classes of static and extension methods are used. However, the first type of classes (classes that inherits from MonoBehaviour) must be attached as component of a GameObject in order to use its methods.
 
 ### Camera Helpers
 
@@ -59,33 +80,33 @@ The class create these delays using StartCoroutine() and IEnumerators, needing t
 
 - **TransformExtensions.cs**: Class with extension methods for components of the Transform type. Methods: FindChildrenGameObjectsWithTag.
 
-### FileHelpers:
+### File Helpers:
 
 - **FileManagementHelpers.cs**: Class with methods to Copy and Delete Files. Also has a method that create a unique name to a file that will be copied to a directory.
 
-### GameObjectHelpers:
+### GameObject Helpers:
 
 - **GameObjectInstantiator.cs**: Class that allows the instantiation of GameObjects in the scene at the game runtime.
 
-### HashingHelpers:
+### Hashing Helpers:
 
 - **HashGenerator.cs**: Class with a method that allows the creation of SHA256 cryptographic hash from a string.
 
-### HttpHelpers:
+### Http Helpers:
 
 - **ApiDataRequester.cs**: Class that allows data requesting from an API.
 
 - **ApiDataSender.cs**: Class that allows data sending to an API.
 
-### SceneHelpers:
+### Scene Helpers:
 
 - **SceneManager.cs**: Class with methods for scene management.
 
-### StringHelpers:
+### String Helpers:
 
 - **StringGenerator.cs**: Class with methods that allows the creation of random strings.
 
-### TextureHelpers:
+### Texture Helpers:
 
 - **TextureEditor.cs**: Class with methods for editing textures, such as cropping, for example.
 
@@ -93,13 +114,15 @@ The class create these delays using StartCoroutine() and IEnumerators, needing t
 
 - **TextureScale.cs**: Class with methods that allows the scaling of a texture. For most cases, just using the method `public static void Bilinear(Texture2D tex, int newWidth, int newHeight)` is sufficient. [This script was taken from the Unity Community Wiki](https://wiki.unity3d.com/index.php/TextureScale).
 
-### VirtualKeyboardHelpers (WINDOWS ONLY):
+### Virtual Keyboard Helpers (WINDOWS ONLY):
 
 - **VirtualKeyboard.cs**: The class allows the opening and closing of the Windows virtual keyboard.
 
-### XMLHelpers:
+### XML Helpers:
 
 - **XMLReader.cs**: The class allows the reading of XML file content. The method `GetDataFromXMLFile(string path, string xmlTag)` gets the data enclosed by a XML tag. Example: `<Username>Luke Skywalker</Username>`. This method doesn't work on tags that are children of another tag.
+
+---
 
 ## How to Use
 
