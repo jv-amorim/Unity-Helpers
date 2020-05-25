@@ -56,7 +56,7 @@ There are three types of classes in this repository: classes that inherits from 
 
 - **CanvasItemsPaginationManager.cs**: Class that creates pagination on a set of canvas items. Examples of set of canvas items: images gallery, score ranking table.
 
-- **CursorEffects.cs**: Class with methods that change the mouse cursor from arrow icon to link icon, and vice versa. To use this class and change the mouse cursor when hovering an element in canvas (a button, for example), you must attach this script to a GameObject and assign the arrow texture and link texture to the two public fields. The methods ChangeCursorToArrow() and ChangeCursorToLink() can be called with a EventTrigger, using the OnPointerEnter and OnPointerExit events.
+- **CursorEffects.cs**: Class with methods that change the mouse cursor from arrow icon to link icon, and vice versa. To use this class and change the mouse cursor when hovering an element in canvas (a button, for example), you must attach this script to a GameObject and assign the arrow texture and link texture to the two public fields. The methods ChangeCursorToArrow() and ChangeCursorToLink() can be called with a EventTrigger, using the OnPointerEnter and OnPointerExit event listeners.
 
 - **InputFieldHelpers.cs**: Class with methods to use in the InputField or TMP_InputField component. With this class you can show or hide the content of a password field, for example.
 
@@ -82,7 +82,7 @@ There are three types of classes in this repository: classes that inherits from 
 
 ### File Helpers:
 
-- **FileManagementHelpers.cs**: Class with methods to Copy and Delete Files. Also has a method that create a unique name to a file that will be copied to a directory.
+- **FileManagementHelpers.cs**: Class with methods to Copy and Delete Files. Also has a method that create a unique name to a file that will be copied to a directory, avoiding the overwriting of an existing file.
 
 ### GameObject Helpers:
 
@@ -114,13 +114,15 @@ There are three types of classes in this repository: classes that inherits from 
 
 - **TextureScale.cs**: Class with methods that allows the scaling of a texture. For most cases, just using the method `public static void Bilinear(Texture2D tex, int newWidth, int newHeight)` is sufficient. [This script was taken from the Unity Community Wiki](https://wiki.unity3d.com/index.php/TextureScale).
 
-### Virtual Keyboard Helpers (WINDOWS ONLY):
+### Virtual Keyboard Helpers:
 
-- **VirtualKeyboard.cs**: The class allows the opening and closing of the Windows virtual keyboard.
+(WINDOWS ONLY)
+
+- **VirtualKeyboard.cs**: The class allows the opening and closing of the Windows 10 virtual keyboard.
 
 ### XML Helpers:
 
-- **XMLReader.cs**: The class allows the reading of XML file content. The method `GetDataFromXMLFile(string path, string xmlTag)` gets the data enclosed by a XML tag. Example: `<Username>Luke Skywalker</Username>`. This method doesn't work on tags that are children of another tag.
+- **XMLReader.cs**: The class allows the reading of XML file content. The method `GetDataFromXMLFile(string path, string xmlTag)` gets the content enclosed by a XML tag. Example: `<Username>Luke Skywalker</Username>`. This method doesn't work on tags that are children of another tag.
 
 ---
 
