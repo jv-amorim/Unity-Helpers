@@ -14,6 +14,11 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
 </p>
 
+<p align="center">
+  <a href="https://github.com/JV-Amorim/Unity-Helpers/blob/master/README.md">🇬🇧 EN<a/> |
+  <a href="https://github.com/JV-Amorim/Unity-Helpers/blob/master/README-PT-BR.md">🇧🇷 PT-BR<a/>
+</p>
+
 ## Tabela de Conteúdos
 
 - [Tabela de Conteúdos](#tabela-de-conte%C3%BAdo)

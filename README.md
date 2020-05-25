@@ -1,5 +1,6 @@
 <h1 align="center">
     Unity Helpers
+    <img alt="Unity Official Logo" src="https://github.com/JV-Amorim/Unity-Helpers/blob/master/Official_unity_logo.png">
 </h1>
 
 <p align="center">
@@ -12,6 +13,11 @@
   </a>
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+</p>
+
+<p align="center">
+      <a href="https://github.com/JV-Amorim/Unity-Helpers/blob/master/README.md">🇬🇧 EN<a/> |
+      <a href="https://github.com/JV-Amorim/Unity-Helpers/blob/master/README-PT-BR.md">🇧🇷 PT-BR<a/>
 </p>
 
 ## Table of Contents
