@@ -3,6 +3,10 @@
 </h1>
 
 <p align="center">
+    <img alt="Unity Official Logo" src="https://github.com/JV-Amorim/Unity-Helpers/blob/master/Official_unity_logo.png" width="30%">
+</p>
+
+<p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/JV-Amorim/Unity-Helpers">
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/JV-Amorim/Unity-Helpers">
