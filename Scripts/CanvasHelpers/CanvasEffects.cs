@@ -24,9 +24,9 @@ namespace UnityHelpers.CanvasHelpers
 
             alertImage.raycastTarget = false;
 
-            var asyncEffects = alert.AddComponent<CanvasAsyncEffects>();
-            asyncEffects.FadeOutTheImage(alertImage, 1f, 3f);
-            asyncEffects.DestroyCanvasGameObject(alert, 4f);
+            var canvasEffectsWithDelay = alert.AddComponent<CanvasEffectsWithDelay>();
+            canvasEffectsWithDelay.FadeOut(alertImage, 1f, 3f);
+            canvasEffectsWithDelay.DestroyCanvasGameObject(alert, 4f);
         }
 
         public static void ClearAllAlerts()
