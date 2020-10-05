@@ -15,7 +15,7 @@ namespace UnityHelpers.TextureHelpers
             return newTexture;
         }
         
-        Texture2D RotateTexture(Texture2D originalTexture, bool clockwise)
+        public static Texture2D RotateTexture(Texture2D originalTexture, bool clockwise)
         {
             Color32[] original = originalTexture.GetPixels32();
             Color32[] rotated = new Color32[original.Length];
